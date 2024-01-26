@@ -31,8 +31,9 @@
             
          </div>
          <div class="box_search">
-            <form action="#" method="POST">
-               <input type="text" name="" id="" placeholder="Từ khóa tìm kiếm">
+            <form action="index.php?act=sanpham" method="POST">
+               <input type="text" name="kyw" id="" placeholder="Từ khóa tìm kiếm">
+               <input type="submit" name="timkiem" value="tim kiem">
             </form>
          </div>
       </div>
@@ -47,7 +48,7 @@
                   $img=$img_part.$img;
                   echo '
                      <div class="selling_products" style="width:100%;">
-                        <img src="'.$img.'" alt="anh">
+                        <a href="'.$linksp.'"><img src="'.$img.'" alt="anh"></a>
                         <a href="'.$linksp.'">'.$name.'</a>
                      </div>
                   ';
