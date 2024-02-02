@@ -26,6 +26,7 @@
               <li><a href="index.php?act=dskh">Khách hàng</a></li>
               <li><a href="index.php?act=dsbl">Bình luận</a></li>
               <li><a href="index.php?act=thongke">Thống kê</a></li>
+              <li><a href="../index.php">Trang Người dùng</a></li>
             </ul>
         </div>
       </header>

@@ -18,7 +18,13 @@
         <div class="mb">
             <div class="box_title">BÌNH LUẬN</div>
             <div class="box_content">
-
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+                <script>
+                $(document).ready(function() {
+                $("#binhluan").load("view/binhluan/binhluanform.php", {idpro: <?= $id ?>});
+                });
+                </script>
+                <div class="mb" id="binhluan"></div>
             </div>
         </div>
         <div class="mb">

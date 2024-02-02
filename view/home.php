@@ -11,17 +11,27 @@
          <?php
          foreach ($spnew as $sp) {
             extract($sp);
-            $hinh=$img_part.$img;
-            $linksp="index.php?act=sanphamct&idsp=".$id;
+            $hinh = $img_part . $img;
+            $linksp = "index.php?act=sanphamct&idsp=" . $id;
             echo '
             <div class="box_items">
-            <div class="box_items_img">
-            <a href="'.$linksp.'"><img src="'.$hinh.'" alt=""></a>
+               <div class="box_items_img">
+                  <a href="' . $linksp . '"><img src="' . $hinh . '" alt=""></a>
+               </div>
+                  <a class="item_name" href="' . $linksp . '">' . $name . '</a>
+                  <p class="price">$' . $price . '</p>
+                  <p class="mota">$' . $mota . '</p>
+               <div class="row btnaddtocart">
+                  <form action="index.php?act=addtocart" method="post">
+                        <input type="hidden" name="id" value="' . $id . '">
+                        <input type="hidden" name="name" value="' . $name . '">
+                        <input type="hidden" name="img" value="' . $hinh . '">
+                        <input type="hidden" name="price" value="' . $price . '">
+                        <input type="submit" name="addtocart" value="Thêm Vào giỏ Hàng">
+                  </form>
+               </div>
             </div>
-             <a class="item_name" href="'.$linksp.'">'.$name.'</a>
-             <p class="price">$'.$price.'</p>
-             <p class="mota">$'.$mota.'</p>
-          </div>
+            
                ';
          }
          ?>
