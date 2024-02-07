@@ -129,22 +129,31 @@ if (isset($_GET['act'])) {
             $listdanhmuc = loadall_danhmuc();
             $listsanpham = loadall_sanpham("", 0);
             include "sanpham/list.php";
-            break; 
-            case 'dskh':
-                $listtaikhoan = loadall_taikhoan();
-                include "taikhoan/list.php";
-                break;
-            case 'dsbl':
-                $listbinhluan = loadall_binhluan("");
-                include "binhluan/list.php";
-                break;
-            case 'xoabl':
-                if (isset($_GET['id']) && ($_GET['id'] > 0)) {
-                    delete_binhluan($_GET['id']);
-                }
-                $listbinhluan = loadall_binhluan("");
-                include "binhluan/list.php";
-                break;
+            break;
+        case 'dskh':
+            $listtaikhoan = loadall_taikhoan();
+            include "taikhoan/list.php";
+            break;
+        case 'dsbl':
+            $listbinhluan = loadall_binhluan("");
+            include "binhluan/list.php";
+            break;
+        case 'xoabl':
+            if (isset($_GET['id']) && ($_GET['id'] > 0)) {
+                delete_binhluan($_GET['id']);
+            }
+            $listbinhluan = loadall_binhluan("");
+            include "binhluan/list.php";
+            break;
+        case 'thongke':
+            $listthongke = loadall_thongke();
+            include "thongke/list.php";
+            break;
+
+        case 'bieudo':
+            $listthongke = loadall_thongke();
+            include "thongke/bieudo.php";
+            break;
 
         default:
             include "home.php";
