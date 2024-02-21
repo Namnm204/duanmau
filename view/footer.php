@@ -8,7 +8,7 @@
          <div id="footer">
             <div class="footer-left">
               <div class="footer-logo">
-                <img src="./img/FPTShop_logo.jpg" alt="" />
+                <img src="view/img/FPTShop_logo.jpg" alt="" />
               </div>
               <div class="card_1">
                 <h3>CÔNG TY ĐIỆN TỬ FPT SỐ 1 VIỆT NAM</h3>
@@ -42,17 +42,17 @@
                 <div class="images">
                   <div class="image">
                     <img
-                      src="./img/anh4.jpg"
+                      src="view//img/anh4.jpg"
                       alt=""
                     />
                   </div>
                   <div class="image">
-                    <img src="./img/anh1.jpg" alt="" />
+                    <img src="view//img/anh1.jpg" alt="" />
                   </div>
                 </div>
       
                 <div class="image_3 image">
-                  <img src="./img/anh2.jpg" alt="" />
+                  <img src="view//img/anh2.jpg" alt="" />
                 </div>
               </div>
             </div>
