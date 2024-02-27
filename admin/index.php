@@ -95,6 +95,7 @@ if (isset($_GET['act'])) {
             if (isset($_GET['id']) && ($_GET['id'] > 0)) {
                 delete_sanpham($_GET['id']);
             }
+            $listdanhmuc = loadall_danhmuc();
             $listsanpham = loadall_sanpham($kyw = "", $iddm = 0);
             include "sanpham/list.php";
             break;

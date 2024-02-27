@@ -2,7 +2,7 @@
 
    <div class="boxleft">
       <div class="banner">
-         <img id="banner" src="./view/img/anh0.jpg" alt="">
+         <img id="banner" src="view/img/anh0.jpg" alt="">
          <button class="pre" onclick="pre()">&#10094;</button>
          <button class="next" onclick="next()">&#10095;</button>
       </div>
@@ -27,7 +27,6 @@
                         <input type="hidden" name="name" value="' . $name . '">
                         <input type="hidden" name="img" value="' . $hinh . '">
                         <input type="hidden" name="price" value="' . $price . '">
-                        <input type="submit" name="addtocart" value="Thêm Vào giỏ Hàng">
                   </form>
                </div>
             </div>
